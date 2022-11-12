@@ -34,9 +34,9 @@ if (checkAccess(userOne, 'noadmin')) {
 
 function checkAccessAndShowMessage (user, role) {
     if (user.role === role) {
-        showSuccessMessage(userOne);//console.log (`Доступ открыт ${user.firstname}`);  
+        showSuccessMessage(user);//console.log (`Доступ открыт ${user.firstname}`);  
     } else {
-        showErrorMessage(userOne);//console.log (`${user.firstname} - Доступ закрыт`);
+        showErrorMessage(user);//console.log (`${user.firstname} - Доступ закрыт`);
     }
 }
 
